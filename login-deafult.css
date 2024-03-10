@@ -1,0 +1,219 @@
+body {
+    overflow: hidden;
+    display: grid;
+    background-size: cover;
+    place-items: center;
+    background-image: url('deafult.jpg');
+    height: 100vh;
+}
+
+img.header{
+    width: 225px;
+    height: 100.5px;
+}
+
+
+div.header{
+    font-size: 70px;
+    font-family:monotype corsiva;
+    -webkit-text-stroke: black 1.5px;
+    color: white;
+    width: max-content;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 10px 10px 10px white;
+    border: 3px solid white;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: solid 2px white;
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    color: white;
+    background-color: transparent;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: white;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: solid 1px white;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    -webkit-text-stroke: black 0.5px;
+}
+
+label input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+.cancel-btn,
+.reset-btn {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #999;
+    -webkit-text-stroke: black 0.5px;
+}
+
+.options {
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.options button {
+    font-size: large;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-size: contain;
+}
+
+.options button:hover {
+    background-color: #999;
+    height: 100px;
+    width: 100px;
+}
+
+.options button:btn {
+    background-color: #999;
+    height: 100px;
+    width: 100px;
+}
+
+.choppa-styles .login-container {
+    box-shadow: 10px 10px 10px pink;
+    border: 3px solid pink;
+}
+
+.choppa-styles .form-group label {
+    color: pink;
+}
+
+.choppa-styles input[type="text"],
+.choppa-styles input[type="password"] {
+    border-bottom: 1px solid black;
+    border: solid 2px pink;
+    color: pink;
+}
+
+.choppa-styles input[type="text"]::placeholder,
+.choppa-styles input[type="password"]::placeholder {
+    color: pink;
+}
+
+.choppa-styles input[type="text"]:focus,
+.choppa-styles input[type="password"]:focus {
+    border-bottom: solid 1px pink;
+}
+
+.choppa-styles .form-footer {
+    color: pink;
+}
+
+#luffybtn{
+    background-image: url(luffy.png);
+}
+
+#zorobtn{
+    background-image: url(zoro.jpg);
+}
+
+#sanjibtn{
+    background-image: url(sanji.jpg);
+}
+
+#robinbtn{
+    background-image: url(robin.jpg);
+}
+
+#ussopbtn{
+    background-image:url(ussop.jpg);
+}
+
+#choppabtn{
+    background-image: url(choppa.jpg);
+}
+
+#jinbeibtn{
+    background-image: url(jinbei.png);
+}
+
+#brookbtn{
+    background-image: url(brook.jpg);
+}
+
+#frankybtn{
+    background-image: url(franky.jpg);
+}
+
+#namibtn{
+    background-image: url(nami.png);
+}
+
+#deafult{
+    background-image: url(img_avatar.png);
+}

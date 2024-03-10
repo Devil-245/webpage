@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-deafult.css"  id="stylesheet">
+    <script src="login.js" defer></script>
+    <title>Login Form</title>
+</head>
+<body>
+    <audio id="themeMusic" loop autoplay volume="0.1">
+        <source src="theme.mp3" type="audio/mpeg" >
+    </audio>
+      <div class="header">
+        <span class="text">Join The Nakamas</span>
+        <span class="img"><img src="nakamas.png" class="header"></span>
+      </div>
+    <div class="login-container">
+        <div class="img-container">
+            <img src="img_Avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="form-group">
+            <label for="uname" class="input-label">Username</label>
+            <input type="text" placeholder="Enter Username" name="uname" required id="un" class="input-field">
+        </div>
+        <div class="form-group">
+            <label for="psw" class="input-label">Password</label>
+            <input type="password" placeholder="Enter Password" name="psw" required id="pw" class="input-field"> 
+        </div>
+        <div class="form-footer">
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <span class="forgot-password">Forgot password?</a></span>
+        </div>
+
+        <button type="submit" onclick="ch()">Login</button>
+    </div>
+
+    <div class="options">
+        <button id="luffybtn"></button>
+        <button id="zorobtn"></button>
+        <button id="sanjibtn"></button>
+        <button id="robinbtn"></button>
+        <button id="ussopbtn"></button>
+        <button id="choppabtn"></button>
+        <button id="jinbeibtn"></button>
+        <button id="brookbtn"></button>
+        <button id="frankybtn"></button>
+        <button id="namibtn"></button>
+        <button id="deafult"></button>
+    </div>
+</body>
+</html>
