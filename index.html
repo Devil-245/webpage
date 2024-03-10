@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .header {
+            background-color: #967259;
+            border: #c8472c double 5px;
+            background-clip: content-box;
+            margin: 10px;
+            display: flex;
+            margin-bottom: 30px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            align-items: center;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            cursor: url('cursor.png'), auto;
+            background-color: #ffebcd;
+            background-image: url('bgrep.webp');
+            background-repeat:repeat;
+            margin: 20px;
+            height: 100vh; /* Ensure the body takes up the entire viewport height */
+            overflow: auto; /* Add scrollbars if content overflows */
+        }
+        
+        .image {
+            width: 50%;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        
+        .button {
+            text-align: left;
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .button button {
+            margin: 5px;
+            padding: 5px;
+            font-size: 35px;
+            color: blck;
+            height: 50px;
+            background: none;
+            border: none;
+        }
+        
+        .button button:hover {
+            background-color: #38220f ;
+            border-radius: 5px;
+            color: #f8de3c;
+            border: 1px solid black;
+            -webkit-text-stroke: black 0.25px;
+            cursor: pointer;
+        }
+        
+        .menu {
+            width: 50%;
+            padding-right: 5%;
+            float: right;
+            font-size: 40px;
+            text-align: right;
+            display: none;
+        }
+        
+        .hambn {
+            transform: translateX(0%);
+        
+            width: min-content;
+            border: none;
+            width: 200px;
+            background-color: #967259;
+            float: right;
+            display: none;
+            width: 0;
+            overflow: hidden;
+            transition: width 0.3s ease-in-out;
+        
+        }
+        
+        .hambn button {
+            font-size: 17.5px;
+            color: black;
+            height: 50px;
+            margin-bottom: 5px;
+            width: 100%;
+            border: none;
+            background: none;
+        }
+        
+        .hambn button:hover {
+            background-color: #38220f;
+            border-radius: 5px;
+            color: #f8de3c;
+            width: 100%;
+            margin-bottom: 5px;
+            -webkit-text-stroke: black 0.25px;
+            cursor: pointer;
+        }
+        
+        .hambn.show {
+            width: 200px;
+            display: block;
+            overflow: visible;
+        
+        }
+        #loginFrame{
+            float: center;
+            width: 100%;
+            border-radius: 50px;
+            padding: 20px;
+            height: 400px;
+            border: none;
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+         }
+        
+         /* Hide the audio element visually */
+        #themeMusic {
+            display: none;
+        }
+        
+        #music{
+            display: none;
+        }
+        
+        .text{
+            font-size: 20px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .button button {
+                margin: 5px;
+                padding: 5px;
+                font-size: 17.5px;
+                color: black; /* Correct the typo 'blck' to 'black' */
+                height: 25px;
+                background: none;
+                display: none;
+                border: none;
+                
+            }
+        
+            .menu {
+                display: block;
+                cursor: pointer;
+           }
+        
+        }
+    </style>    
+    <title>index</title>
+</head>
+<body>
+    <audio id="themeMusic" loop autoplay volume="0.1">
+        <source src="theme.mp3" type="audio/mpeg" >
+    </audio>
+      <button id="music">MUSIC</button>
+    <div class="header">
+        
+        <div class="container">
+            <div class="img">
+                <img src="index.png" class="image">
+            </div>
+        </div>
+        <div class="button">
+            <button>Home</button>
+            <button>Anime</button>
+            <button>Characters</button>
+            <button>Locations</button>
+            <button id="loginButton" onclick="window.open('c:/Users/sapha/Downloads/DIVVVVVVVVVVVVVVVVV/Login Multiple/login.html','_self')">Login</button>
+        </div>   
+        <div class="menu">
+            &#9776;
+        </div>     
+    </div>
+    <div id="content">
+        <div class="hambn">
+           
+            <button>Home</button>
+            <button>Anime</button>
+            <button>Characters</button>
+            <button>Locations</button>
+            <button id="login" onclick="window.open('c:/Users/sapha/Downloads/DIVVVVVVVVVVVVVVVVV/Login Multiple/login.html','_self')";>Login</button>
+        </div>
+        <div class="descreption">
+            <div class="text">
+                <p>"One Piece" is a wildly popular Japanese manga and anime series created by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his pirate crew, known as the Straw Hat Pirates, as they search for the ultimate treasure known as "One Piece" in order to become the Pirate King.<br><br>
+
+                    The story begins with Luffy, a young boy inspired by the legendary pirate, "Red-Haired" Shanks, who saved his life and gave him his treasured straw hat. Luffy's dream is to find the One Piece and become the Pirate King, the ruler of the seas. To achieve this, he sets out on a journey across the Grand Line, the most dangerous and unpredictable sea in the world.<br><br>
+                    
+                    As the series progresses, Luffy gathers a diverse crew of individuals with their own dreams and goals, including Zoro, a master swordsman aiming to become the world's greatest swordsman; Nami, a skilled navigator seeking to map the entire world; Usopp, a sharpshooter with dreams of becoming a brave warrior of the sea; Sanji, a passionate cook aspiring to find the All Blue, a legendary sea where all fish gather; Chopper, a reindeer doctor who wants to cure any disease; Robin, an archaeologist in search of the history of the world; Franky, a cyborg shipwright with a dream of sailing aboard the legendary ship, the Thousand Sunny; Brook, a living skeleton musician seeking to fulfill his promise to a beloved friend; and Jinbe, a fish-man warrior and former Warlord of the Sea.<br><br>
+                    
+                    The world of "One Piece" is richly detailed and filled with unique characters, fantastical creatures, and mysterious islands. The series explores themes of friendship, loyalty, freedom, and the pursuit of one's dreams amidst a backdrop of adventure and peril.<br><br>
+                    
+                    Throughout their journey, the Straw Hat Pirates encounter powerful enemies, including other pirate crews, government agents, and mythical beings. They face off against the notorious World Government, the oppressive organization that governs the seas, as well as the enigmatic Yonko, the four most powerful pirates in the world.<br><br>
+                    
+                    "One Piece" is known for its intricate plotlines, intricate world-building, and emotional depth. It seamlessly blends action, humor, drama, and suspense, captivating audiences of all ages around the globe. With its compelling characters and epic storytelling, "One Piece" has become one of the most beloved and enduring manga and anime series of all time.</p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.menu');
+const hamburgerMenu = document.querySelector('.hambn');
+
+menuButton.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('show');
+    if (menuButton.textContent === '🗙') {
+        menuButton.textContent = '☰'; // Replace 'Original Text' with your original text
+    } else {
+        menuButton.textContent = '🗙';
+    }
+});
+
+
+function playBackgroundMusic() {
+    const themeMusic = document.getElementById('themeMusic');
+    if (themeMusic.paused) {
+        themeMusic.play();
+    }
+}
+document.addEventListener('DOMContentLoaded', playBackgroundMusic);
+document.addEventListener('click', playBackgroundMusic);
+
+    </script>
+</body>
+</html>
