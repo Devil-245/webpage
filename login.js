@@ -1,22 +1,10 @@
 function ch() {
-    const username = document.getElementById('un').value;
-    const pw = document.getElementById('pw').value;
-    if (username === "guest" && pw === "123")  {
-        document.write("Login Success. \n <br> You are now being redirected.");
-        window.open("https://aniwave.to", "_blank");
-    } else {
-        alert("Wronggggg");
-    }
+    alert('Account created successfuly!!')
 }
 
-function playBackgroundMusic() {
-    const themeMusic = document.getElementById('themeMusic');
-    if (themeMusic.paused) {
-        themeMusic.play();
-    }
+function back() {
+    history.back();
 }
-document.addEventListener('DOMContentLoaded', playBackgroundMusic);
-document.addEventListener('click', playBackgroundMusic);
 
 var imgElement = document.querySelector('.img-container img');
 var cssLink = document.getElementById("stylesheet");

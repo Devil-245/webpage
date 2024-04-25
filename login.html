@@ -8,32 +8,43 @@
     <title>Login Form</title>
 </head>
 <body>
-
+    <div style="width: 100%;">
+    <div class="back"><img src="back.png" width="75px" onclick="back()"></div>
+        <center>
       <div class="header">
         <span class="text">Join The Nakamas</span>
         <span class="img"><img src="nakamas.png" class="header"></span>
       </div>
-    <div class="login-container">
+    </center>
+    </div>
+      <div class="login-container">
         <div class="img-container">
             <img src="img_Avatar.png" alt="Avatar" class="avatar">
         </div>
-        <div class="form-group">
-            <label for="uname" class="input-label">Username</label>
-            <input type="text" placeholder="Enter Username" name="uname" required id="un" class="input-field">
-        </div>
-        <div class="form-group">
-            <label for="psw" class="input-label">Password</label>
-            <input type="password" placeholder="Enter Password" name="psw" required id="pw" class="input-field"> 
-        </div>
-        <div class="form-footer">
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-            <span class="forgot-password">Forgot password?</a></span>
-        </div>
-
-        <button type="submit" onclick="ch()">Login</button>
+        <form>
+            <div class="form-group">
+                <label for="mail" class="input-label">Email</label>
+                <input type="email" placeholder="Enter Email" name="email" required id="em" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="uname" class="input-label">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required id="un" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="psw" class="input-label">Password</label>
+                <input type="password" placeholder="Enter Password" name="psw" required id="pw" class="input-field"> 
+            </div>
+            <div class="form-footer">
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <span class="forgot-password">Forgot password?</span>
+            </div>
+    
+            <button type="submit">Login</button>
+        </form>
     </div>
+    
 
     <div class="options">
         <button id="luffybtn"></button>

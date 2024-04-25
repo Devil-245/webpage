@@ -7,20 +7,26 @@ body {
     height: 100vh;
 }
 
-img.header{
+img.header {
     width: 225px;
     height: 100.5px;
-    border-radius: 25px;
-    background-color: white;
 }
 
-
-div.header{
+div.header {
     font-size: 70px;
-    font-family:monotype corsiva;
+    font-family: monotype corsiva;
     -webkit-text-stroke: black 1.5px;
     color: white;
-    width: max-content;
+}
+
+.back {
+    font-size: 70px;
+    font-family: monotype corsiva;
+    -webkit-text-stroke: black 1.5px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    float: left;
 }
 
 .login-container {
@@ -51,7 +57,8 @@ div.header{
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"] {
     border: solid 2px white;
     border-bottom: 1px solid white;
     padding: 10px;
@@ -64,11 +71,13 @@ input[type="password"] {
 }
 
 input[type="text"]::placeholder,
-input[type="password"]::placeholder {
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
     color: white;
 }
 
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus {
     border-bottom: solid 1px white;
     outline: none;
@@ -156,19 +165,22 @@ label input[type="checkbox"] {
 }
 
 .choppa-styles input[type="text"],
-.choppa-styles input[type="password"] {
+.choppa-styles input[type="password"],
+.choppa-styles input[type="email"] {
     border-bottom: 1px solid black;
     border: solid 2px pink;
     color: pink;
 }
 
 .choppa-styles input[type="text"]::placeholder,
-.choppa-styles input[type="password"]::placeholder {
+.choppa-styles input[type="password"]::placeholder,
+.choppa-styles input[type="email"]::placeholder {
     color: pink;
 }
 
 .choppa-styles input[type="text"]:focus,
-.choppa-styles input[type="password"]:focus {
+.choppa-styles input[type="password"]:focus,
+.choppa-styles input[type="email"] {
     border-bottom: solid 1px pink;
 }
 
@@ -176,47 +188,56 @@ label input[type="checkbox"] {
     color: pink;
 }
 
-#luffybtn{
+.choppa-styles button[type="submit"] {
+    background-color: pink;
+}
+
+.choppa-styles button[type="submit"]:hover {
+    background-color: #f5a2b0;
+    -webkit-text-stroke: pink 0.5px;
+
+}
+
+#luffybtn {
     background-image: url(luffy.png);
 }
 
-#zorobtn{
+#zorobtn {
     background-image: url(zoro.jpg);
 }
 
-#sanjibtn{
+#sanjibtn {
     background-image: url(sanji.jpg);
 }
 
-#robinbtn{
+#robinbtn {
     background-image: url(robin.jpg);
 }
 
-#ussopbtn{
-    background-image:url(ussop.jpg);
+#ussopbtn {
+    background-image: url(ussop.jpg);
 }
 
-#choppabtn{
+#choppabtn {
     background-image: url(choppa.jpg);
 }
 
-#jinbeibtn{
+#jinbeibtn {
     background-image: url(jinbei.png);
 }
 
-#brookbtn{
+#brookbtn {
     background-image: url(brook.jpg);
 }
 
-#frankybtn{
+#frankybtn {
     background-image: url(franky.jpg);
 }
 
-#namibtn{
+#namibtn {
     background-image: url(nami.png);
 }
 
-#deafult{
+#deafult {
     background-image: url(img_avatar.png);
 }
-
